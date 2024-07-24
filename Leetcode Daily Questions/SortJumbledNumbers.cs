@@ -28,20 +28,20 @@ namespace Leetcode_Daily_Questions
             });
             return nums;
         }
-        
+
 
         public int GetMappedValue(int[] mapping, int num)
         {
-            if(num == 0)
+            if (num == 0)
             {
                 return mapping[0];
             }
             int value = 0;
-            int pow = 0;
+            int pow = 1;
             while (num != 0)
             {
-                value += mapping[(num % 10)] * (int)Math.Pow(10, pow);
-                pow++;
+                value += mapping[(num % 10)] * pow;
+                pow *= 10;
                 num /= 10;
             }
             return value;
