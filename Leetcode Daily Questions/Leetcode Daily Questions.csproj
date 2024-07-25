@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="912SortAnArray.cs" />
+    <Compile Include="CountingSort.cs" />
     <Compile Include="SortJumbledNumbers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
